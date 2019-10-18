@@ -18,7 +18,7 @@ public class GoLive extends CommonApi {
         driver.findElement(By.xpath("/html/body/div[1]/div[1]/nav/div[2]/a[2]"));
     }
 
-    public void viewsettings() {
+    public void viewSettings() {
         clickOnElement("//*[@id=\"nav\"]/header/div/div[1]/div/a/span");
         driver.findElement(By.xpath("/html/body/div[1]/div[1]/nav/div[2]/a[3]"));
     }

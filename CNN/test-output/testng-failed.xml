@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [CNN Automation Script ]">
+<suite name="Failed suite [CNN Automation Script ]" guice-stage="DEVELOPMENT">
   <parameter name="useCloudEnv" value="false"/>
   <parameter name="os" value="OS X"/>
   <parameter name="os_version" value="Sierra"/>
@@ -10,149 +10,38 @@
   <parameter name="url" value="https://www.cnn.com"/>
   <test thread-count="5" name="CNN HomePage Test(failed)">
     <classes>
-      <class name="home.TestLive">
-        <methods>
-          <include name="viewShows"/>
-          <include name="afterEachTestMethod"/>
-          <include name="generateReport"/>
-          <include name="extentSetup"/>
-          <include name="setUp"/>
-          <include name="viewChannels"/>
-          <include name="startExtent"/>
-          <include name="viewsettings"/>
-          <include name="cleanUp"/>
-        </methods>
-      </class> <!-- home.TestLive -->
       <class name="home.TestFooterTabs">
         <methods>
-          <include name="getPrivacypolicy"/>
-          <include name="getTermsosUse"/>
+          <include name="goToLongForm"/>
           <include name="afterEachTestMethod"/>
-          <include name="getCNNNewsource"/>
           <include name="goToNewsletter"/>
-          <include name="getAccessibilityandcc"/>
-          <include name="goToCNNStore"/>
           <include name="extentSetup"/>
           <include name="licenseFootage"/>
-          <include name="startExtent"/>
           <include name="cleanUp"/>
           <include name="getCNNStudioTours"/>
-          <include name="getSitemap"/>
+          <include name="goToStyle"/>
+          <include name="testParentingSection"/>
+          <include name="testPlayPage"/>
+          <include name="goToCnnLead"/>
+          <include name="getTermsOfsUse"/>
           <include name="getTranscript"/>
           <include name="getAdChoices"/>
-          <include name="generateReport"/>
+          <include name="testArchitecturePage"/>
           <include name="setUp"/>
+          <include name="testFactsSection"/>
+          <include name="getCNNNewSource"/>
+          <include name="goToFitness"/>
+          <include name="getPrivacyPolicy"/>
+          <include name="goToCNNStore"/>
+          <include name="goToCnnVr"/>
+          <include name="goToTech"/>
+          <include name="getAccessibilityAndCc"/>
+          <include name="startExtent"/>
+          <include name="getSiteMap"/>
+          <include name="goToAmericas"/>
+          <include name="generateReport"/>
         </methods>
       </class> <!-- home.TestFooterTabs -->
-      <class name="home.TestSearchPage">
-        <methods>
-          <include name="navigateToBusinessPage"/>
-          <include name="testInnovativeCitiesPage"/>
-          <include name="navigateToWorldSection"/>
-          <include name="afterEachTestMethod"/>
-          <include name="navigateToUsSection"/>
-          <include name="testAsiaPage"/>
-          <include name="testSearchCoupons"/>
-          <include name="extentSetup"/>
-          <include name="navigateToPoliticsSection"/>
-          <include name="startExtent"/>
-          <include name="navigateToOpinionPage"/>
-          <include name="cleanUp"/>
-          <include name="navigateToSportsPage"/>
-          <include name="testCNNFilmsPage"/>
-          <include name="navigateToEntertainmentPage"/>
-          <include name="navigateToHealthPage"/>
-          <include name="navigateTovideosPage"/>
-          <include name="generateReport"/>
-          <include name="testDigitalStudiosPage"/>
-          <include name="navigateToTravelPage"/>
-          <include name="setUp"/>
-          <include name="testEuropeSection"/>
-          <include name="navigateToStylePage"/>
-        </methods>
-      </class> <!-- home.TestSearchPage -->
-      <class name="home.TestSearchText">
-        <methods>
-          <include name="afterEachTestMethod"/>
-          <include name="searchPhotos"/>
-          <include name="searcSocial"/>
-          <include name="searchOlympics"/>
-          <include name="extentSetup"/>
-          <include name="searchOpinion"/>
-          <include name="cleanUp"/>
-          <include name="searcEnergy"/>
-          <include name="searchCNNProfile"/>
-          <include name="searchMedia"/>
-          <include name="testSearchFood"/>
-          <include name="searchWeather"/>
-          <include name="searchFashion"/>
-          <include name="setUp"/>
-          <include name="searchLifestyle"/>
-          <include name="searchGadegts"/>
-          <include name="searchUS"/>
-          <include name="followOnTwitter"/>
-          <include name="getCongress"/>
-          <include name="searchBasketball"/>
-          <include name="searchTvSchedule"/>
-          <include name="searchUSCrime"/>
-          <include name="startExtent"/>
-          <include name="searchNews"/>
-          <include name="followOnInstagram"/>
-          <include name="followOnFacebook"/>
-          <include name="generateReport"/>
-          <include name="getChina"/>
-          <include name="searchBangladesh"/>
-        </methods>
-      </class> <!-- home.TestSearchText -->
-      <class name="home.TestCheckEdition">
-        <methods>
-          <include name="afterEachTestMethod"/>
-          <include name="checkEspanolEdition"/>
-          <include name="checkUSEdition"/>
-          <include name="checkInternationalEd"/>
-          <include name="generateReport"/>
-          <include name="extentSetup"/>
-          <include name="testCheckEdition"/>
-          <include name="setUp"/>
-          <include name="startExtent"/>
-          <include name="cleanUp"/>
-        </methods>
-      </class> <!-- home.TestCheckEdition -->
-      <class name="home.TestTypeText">
-        <methods>
-          <include name="typeGadget"/>
-          <include name="afterEachTestMethod"/>
-          <include name="typeEconomy"/>
-          <include name="extentSetup"/>
-          <include name="typeDemocrats"/>
-          <include name="typeVoting"/>
-          <include name="cleanUp"/>
-          <include name="typeCollege"/>
-          <include name="typeRepublicans"/>
-          <include name="typeIphone"/>
-          <include name="typeRecent"/>
-          <include name="typeImpeachment"/>
-          <include name="typeNYPD"/>
-          <include name="typeTrump"/>
-          <include name="typeNancyPelosi"/>
-          <include name="typeJustinBieber"/>
-          <include name="setUp"/>
-          <include name="typeConstitution"/>
-          <include name="typeUnemployment"/>
-          <include name="typeSamsung"/>
-          <include name="typeMta"/>
-          <include name="startExtent"/>
-          <include name="typeMichellePhan"/>
-          <include name="typeJoeBiden"/>
-          <include name="typeNasa"/>
-          <include name="typeFBI"/>
-          <include name="typeNYSubway"/>
-          <include name="typeGmailDarkMode"/>
-          <include name="generateReport"/>
-          <include name="typeIphonePro"/>
-          <include name="typeTechnology"/>
-        </methods>
-      </class> <!-- home.TestTypeText -->
     </classes>
   </test> <!-- CNN HomePage Test(failed) -->
 </suite> <!-- Failed suite [CNN Automation Script ] -->

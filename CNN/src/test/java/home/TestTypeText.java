@@ -5,16 +5,16 @@ import org.testng.annotations.Test;
 
 public class TestTypeText extends CommonApi {
     @Test
-    public void typeGadget() {
-    }
-    @Test
-    public void typeTechnology() {
+    public void typeIphonePro() {
     }
     @Test
     public void typeMichellePhan() {
     }
     @Test
-    public void typeIphonePro() {
+    public void typeGadget() {
+    }
+    @Test
+    public void typeTechnology() {
     }
     @Test
     public void typeBusiness() {
@@ -24,6 +24,9 @@ public class TestTypeText extends CommonApi {
     }
     @Test
     public void typeMta(){
+    }
+    @Test
+    public void typeJoeBiden(){
     }
     @Test
     public void typeNYPD(){
@@ -44,13 +47,10 @@ public class TestTypeText extends CommonApi {
     public void typeConstitution() {
     }
     @Test
-    public void typeJoeBiden() {
+    public void typeSamSung(){
     }
     @Test
-    public void typeSamsung(){
-    }
-    @Test
-    public void typeGmailDarkMode() {
+    public void typeGmMode() {
     }
     @Test
     public void typeIphone() {

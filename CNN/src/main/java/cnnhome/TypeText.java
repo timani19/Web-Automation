@@ -8,9 +8,9 @@ public class TypeText extends CommonApi {
     public void typeIphonePro(){
         typeOnInputBox("/html/body/div[7]/div[2]/div/div[1]/div/div[1]/input", "iphone pro");
         driver.findElement(By.linkText("Apple will keep production of the new Mac Pro in the United States"));
-        String iphonepro=driver.getTitle();
+        String iphonePro=driver.getTitle();
         String actualTitle = "Apple will keep production of the new Mac Pro in the United States";
-        Assert.assertEquals(actualTitle, iphonepro);
+        Assert.assertEquals(actualTitle, iphonePro);
     }
     public void typeMichellePhan(){
         typeOnInputBox("/html/body/div[7]/div[2]/div/div[1]/div/div[1]/input", "michelle phan");
@@ -94,11 +94,11 @@ public class TypeText extends CommonApi {
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[1]/div/form/button/div[1]");
     }
 
-    public void typeSamsung(){
+    public void typeSamSung(){
         typeOnInputBox("//*[@id=\"footer-search-bar\"]", "samsung");
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[1]/div/form/button/div[1]");
     }
-    public void typeGmailDarkMode(){
+    public void typeGmMode(){
         typeOnInputBox("//*[@id=\"footer-search-bar\"]", "gmail dark mode");
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[1]/div/form/button/div[1]");
     }

@@ -46,7 +46,7 @@ public class TestSearchPage extends CommonApi {
     }
 
     @Test
-    public void navigateTovideosPage(){
+    public void navigateTovVdeosPage(){
     }
     @Test
     public void checkTechPage() {

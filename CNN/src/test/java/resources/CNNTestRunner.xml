@@ -13,8 +13,9 @@
 
     <test name = "CNN HomePage Test">
         <classes>
-            <class name="home.TestSearchPage"/>
+            <class name="home.TestCnnCareers"/>
             <class name="home.TestCheckEdition"/>
+            <class name="home.TestSearchPage"/>
             <class name="home.TestCheckTitle"/>
             <class name="home.TestLive"/>
             <class name="home.TestFooterTabs"/>

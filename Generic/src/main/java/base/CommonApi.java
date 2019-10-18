@@ -104,7 +104,7 @@ public class CommonApi {
     @Parameters({"url"})
     @BeforeMethod
     public void setUp(String url){
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Tanim Imani\\IdeaProjects\\WebAutomation\\Generic\\browserDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\imani\\IdeaProjects\\CNN-Module\\Generic\\browserDriver\\chromedriver.exe");
         driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
@@ -255,39 +255,6 @@ public class CommonApi {
         select.selectByVisibleText(value);
     }
 
-    public static void sleepFor(int sec) throws InterruptedException {
-        Thread.sleep(sec * 1000);
-    }
-
-    public void mouseHoverByCSS(String locator) {
-        try {
-            WebElement element = driver.findElement(By.cssSelector(locator));
-            Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
-        } catch (Exception ex) {
-            System.out.println("First attempt has been done, This is second try");
-            WebElement element = driver.findElement(By.cssSelector(locator));
-            Actions action = new Actions(driver);
-            action.moveToElement(element).perform();
-
-        }
-
-    }
-
-    public void mouseHoverByXpath(String locator) {
-        try {
-            WebElement element = driver.findElement(By.xpath(locator));
-            Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
-        } catch (Exception ex) {
-            System.out.println("First attempt has been done, This is second try");
-            WebElement element = driver.findElement(By.cssSelector(locator));
-            Actions action = new Actions(driver);
-            action.moveToElement(element).perform();
-
-        }
-
-    }
 
     //handling Alert
     public void okAlert() {
@@ -380,7 +347,56 @@ public class CommonApi {
         }
     }
 
+    public WebElement getElementByLinkedText(String locator){
+        return driver. findElement(By.linkText(locator));
+    }
+    public WebElement getElementByXPath(String locator){
+        return driver. findElement(By.xpath(locator));
+    }
+    public WebElement getElementByCss(String locator){
+        return driver. findElement(By.cssSelector(locator));
+    }
+
+    public static void clickOnElementByLinkText(String locator){
+        driver.findElement(By.linkText(locator)).click();
+    }
+    public static void clickOnElementByCss(String locator){
+        driver.findElement(By.cssSelector(locator)).click();
+    }
+
+    public void scrollIntoView(String locator){
+        JavascriptExecutor javascriptExecutor=(JavascriptExecutor) driver;
+        javascriptExecutor.executeScript("arguments[0].scrollIntoView(true);", getElementByLinkedText(locator));
+    }
+    public void scrollIntoViewByXPath(String locator){
+        JavascriptExecutor javascriptExecutor=(JavascriptExecutor) driver;
+        javascriptExecutor.executeScript("arguments[0].scrollIntoView(true);", getElementByXPath(locator));
+    }
+
+    public void mouseHoverByLinkText(String locator){
+        WebElement element=getElementByLinkedText(locator);
+        Actions actions=new Actions(driver);
+        actions.moveToElement(element).build().perform();
+    }
+    public void mouseHoverByXPath(String locator){
+        WebElement element=getElementByXPath(locator);
+        Actions actions=new Actions(driver);
+        actions.moveToElement(element).build().perform();
+    }
+    public void mouseHoverByCss(String locator){
+        WebElement element=getElementByCss(locator);
+        Actions actions=new Actions(driver);
+        actions.moveToElement(element).build().perform();
+    }
+    public void sleepFor(int seconds){
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch(InterruptedException ex) {
+            ex.printStackTrace();
+        }
+    }
 }
+
 
 
 

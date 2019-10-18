@@ -1,13 +1,32 @@
 package cnnhome;
 
 import base.CommonApi;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import reporting.TestLogger;
 
 public class FooterTabs extends CommonApi {
-    public void getTermsosUse(){
+    @FindBy(xpath = "//*[@id=\"nav\"]/header/div/div[2]/div/div[3]/nav/ul/li[8]/a") WebElement tech;
+    @FindBy(css = "//*[@id=\"nav\"]/header/div/div[2]/div/div[3]/nav/ul/li[9]/a") WebElement style;
+    @FindBy(css = "//*[@id=\"nav\"]/header/div/div[2]/div/div[3]/nav/ul/li[14]/ul/li[2]/a") WebElement longForm;
+    @FindBy(css = "//*[@id=\"nav\"]/header/div/div[2]/div/div[3]/nav/ul/li[12]/ul/li[7]/a") WebElement cnnVrr;
+    @FindBy(css = "//*[@id=\"nav\"]/header/div/div[2]/div/div[3]/nav/ul/li[6]/ul/li[2]/a") WebElement fitness;
+    @FindBy(css = "//*[@id=\"nav\"]/header/div/div[2]/div/div[3]/nav/ul/li[2]/ul/li[2]/a") WebElement americas;
+    @FindBy(css = "//*[@id=\"nav\"]/header/div/div[2]/div/div[3]/nav/ul/li[14]/ul/li[5]/a") WebElement cnnLeadership;
+
+    public void goToTech() {}
+    public void goToStyle() {}
+    public void goToLongForm() {}
+    public void goToCnnVr() {}
+    public void  goToFitness() {}
+    public void  goToAmericas() {}
+    public void  goToCnnLead() {}
+
+    public void getTermsOfsUse(){
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[5]/div/div[2]/nav/ul/li[1]/a");
     }
 
-    public void getPrivacypolicy(){
+    public void getPrivacyPolicy(){
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[5]/div/div[2]/nav/ul/li[2]/a");
     }
 
@@ -20,7 +39,7 @@ public class FooterTabs extends CommonApi {
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[2]/div/div/nav/ul/li[13]/ul/li[6]/a");
     }
 
-    public void getAccessibilityandcc(){
+    public void getAccessibilityAndCc(){
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[5]/div/div[2]/nav/ul/li[3]/a");
     }
 
@@ -46,10 +65,10 @@ public class FooterTabs extends CommonApi {
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[5]/div/div[2]/nav/ul/li[10]/a");
     }
 
-    public void getCNNNewsource(){
+    public void getCNNNewSource(){
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[5]/div/div[2]/nav/ul/li[11]/a");
     }
-    public void getSitemap(){
+    public void getSiteMap(){
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[5]/div/div[2]/nav/ul/li[12]/a");
     }
 

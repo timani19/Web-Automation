@@ -1,8 +1,12 @@
 package cnnhome;
 
 import base.CommonApi;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 public class SearchText extends CommonApi {
+
     public void searchUS() {
         clickOnElement("//*[@id=\"nav\"]/header/div/div[1]/div/div[4]/button");
         typeOnElement("#header-search-bar", "us");
@@ -13,7 +17,7 @@ public class SearchText extends CommonApi {
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[1]/div/form/button");
     }
 
-    public void searcEnergy() {
+    public void searchEnergy() {
         typeOnElement("//*[@id=\"footer-search-bar\"]", "energy");
         clickOnElement("\"//*[@id=\\\"footer-wrap\\\"]/footer/div[1]/div/form/button");
     }
@@ -49,7 +53,7 @@ public class SearchText extends CommonApi {
         clickOnElement("#footer-wrap > footer > div:nth-child(2) > div > div > nav > ul > li:nth-child(14) > ul > li:nth-child(4) > a");
     }
 
-    public void searchGadegts() {
+    public void searchGadgets() {
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[2]/div/div/nav/ul/li[13]/ul/li[4]/a");
     }
 
@@ -69,7 +73,7 @@ public class SearchText extends CommonApi {
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[4]/div/div/div[2]/div/ul/li[3]/a");
     }
 
-    public void searcSocial() {
+    public void searchSocial() {
         typeOnElement("//*[@id=\"footer-search-bar\"]", "social");
         clickOnElement("//*[@id=\"footer-wrap\"]/footer/div[1]/div/form/button/div[1]");
     }

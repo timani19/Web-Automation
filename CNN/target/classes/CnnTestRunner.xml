@@ -13,7 +13,6 @@
 
     <test name = "Cnn Home">
         <classes>
-            <class name="cnnhome.CheckTitle"/>
 
         </classes>
     </test>

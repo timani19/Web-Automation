@@ -16,6 +16,7 @@
         <module>Geico</module>
         <module>Facebook</module>
         <module>Netflix</module>
+        <module>RestAPI</module>
 
     </modules>
 
@@ -78,8 +79,13 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>3.0</version>
             </dependency>
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured</artifactId>
+                <version>4.1.2</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
-
 
 </project>

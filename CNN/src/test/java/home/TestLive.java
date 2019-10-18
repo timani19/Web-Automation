@@ -14,6 +14,9 @@ public class TestLive extends CommonApi {
     public void viewShows() {
     }
     @Test
-    public void viewsettings(){
+    public void viewSettings(){
+    }
+    @Test
+    public void checkLiveUpdates() {
     }
 }

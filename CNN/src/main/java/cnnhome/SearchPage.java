@@ -48,7 +48,7 @@ public class SearchPage extends CommonApi {
         clickOnElement("//*[@id=\"nav\"]/header/div/div[1]/div/div[2]/nav/ul/li[10]/a");
     }
 
-    public void navigateTovideosPage() {
+    public void navigateToVideosPage() {
         clickOnElement("//*[@id=\"nav\"]/header/div/div[1]/div/div[2]/nav/ul/li[11]/a");
     }
 
